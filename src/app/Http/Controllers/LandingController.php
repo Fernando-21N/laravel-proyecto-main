@@ -10,4 +10,8 @@ class LandingController extends Controller
     public function index(){
         return view('landing.index');
     }
+
+    public function checkout(){
+        return view('landing.checkout');
+    }
 }

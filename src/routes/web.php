@@ -22,6 +22,7 @@ use App\Http\Controllers\LandingController;
 #Route::get('/','LandingController@index');
 Route::resource('customer',CustomerController::class);
 Route::resource('/',LandingController::class);
+Route::get('/checkout', [App\Http\Controllers\LandingController::class, 'checkout']);
 
 Auth::routes(['verify' => true]);
 Auth::routes();
