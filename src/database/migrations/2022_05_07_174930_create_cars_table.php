@@ -18,7 +18,7 @@ class CreateCarsTable extends Migration
             $table->string('propietario');
             $table->string('marca');
             $table->string('modelo');
-            $table->integer('precio');
+            $table->decimal('precio', 5, 2);
             $table->date('ahno');
             $table->date('ultima_fecha_matriculacion');
 
