@@ -36,13 +36,13 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'localhost'),
+            'host' => env('MAIL_HOST', 'mailhog_server'),
             'port' => env('MAIL_PORT', 1025),
             'encryption' => env('MAIL_ENCRYPTION'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
-            #'auth_mode' => null,
+            'auth_mode' => null,
         ],
 
         'ses' => [
