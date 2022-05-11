@@ -9,7 +9,7 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>CoreUI Free Bootstrap Admin Template</title>
+    <title>Car Renting</title>
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/registro/assets/favicon/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -45,14 +45,14 @@
           <div class="col-md-6">
             <div class="card mb-4 mx-4">
               <div class="card-body p-4">
-                <h1>Register</h1>
-                <p class="text-medium-emphasis">Create your account</p>
+                <h1>Regístrate</h1>
+                <p class="text-medium-emphasis">Crea tu cuenta</p>
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
 
                     <div class="row mb-3">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                            {{ __('Name') }}:
+                            {{ __('Nombre') }}:
                         </label>
 
                         <input id="name" type="text" class="form-input w-full @error('name')  border-red-500 @enderror"
@@ -67,7 +67,7 @@
 
                     <div class="row mb-3">
                         <label for="email" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                            {{ __('E-Mail Address') }}:
+                            {{ __('E-Mail ') }}:
                         </label>
 
                         <input id="email" type="email"
@@ -83,7 +83,7 @@
 
                     <div class="row mb-3">
                         <label for="password" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                            {{ __('Password') }}:
+                            {{ __('Contraseña') }}:
                         </label>
 
                         <input id="password" type="password"
@@ -98,7 +98,7 @@
                     </div>
 
                     <div class="row mb-3">
-                        <label for="password-confirm" class="">{{ __('Confirm Password') }}:</label>
+                        <label for="password-confirm" class="">{{ __('Confirmar  contraseña') }}:</label>
 
                         <input id="password-confirm" type="password" class="form-input w-full"
                             name="password_confirmation" required autocomplete="new-password">
@@ -116,11 +116,11 @@
 
                     <div class="flex flex-wrap">
                         <button type="submit" class="btn btn-primary" href="/landing/index">
-                            {{ __('Register') }}
+                            {{ __('Regístrate') }}
                         </button>
 
                         <p class="w-full text-xs text-center text-gray-700 my-6 sm:text-sm sm:my-8">
-                            {{ __('Already have an account?') }}
+                            {{ __('Ya tienes una cuenta?') }}
                             <a class="text-blue-500 hover:text-blue-700 no-underline hover:underline" href="{{ route('login') }}">
                                 {{ __('Login') }}
                             </a>

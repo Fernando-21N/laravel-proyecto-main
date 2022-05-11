@@ -35,7 +35,7 @@
         <div class="row" >
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('assets/landing/assets/img/clients/mercedes-benz-logo-1-1.png') }}" class="img-fluid" alt="">
+            <img src="{{ asset('assets/landing/assets/img/clients/mercedes-benz-logo-1-1.png') }}"  alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -373,7 +373,7 @@
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkout">Comprar</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/checkoutsupra">Comprar</a></div>
                             </div>
                         </div>
                     </div>
