@@ -15,15 +15,17 @@ use App\Http\Controllers\LandingController;
 |
 */
 
-#Route::get('/', function () {
-#    return view('landing.bootstrap');
-#});
+;
 
 #Route::get('/','LandingController@index');
 Route::resource('customer',CustomerController::class);
 Route::resource('/',LandingController::class);
 Route::get('/checkout', [App\Http\Controllers\LandingController::class, 'checkout']);
 Route::get('/checkoutsupra', [App\Http\Controllers\LandingController::class, 'checkoutsupra']);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 94e3dc6544f1060b3b769bcc272f8a598fdde172
 
 Auth::routes(['verify' => true]);
 Auth::routes();

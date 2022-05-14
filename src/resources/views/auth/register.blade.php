@@ -9,7 +9,11 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+<<<<<<< HEAD
     <title>Registro | Car Renting</title>
+=======
+    <title>Car Renting</title>
+>>>>>>> 94e3dc6544f1060b3b769bcc272f8a598fdde172
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/registro/assets/favicon/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -45,8 +49,13 @@
           <div class="col-md-6">
             <div class="card mb-4 mx-4">
               <div class="card-body p-4">
+<<<<<<< HEAD
                 <h1>Registro</h1>
                 <p class="text-medium-emphasis">Crea tu cuenta.</p>
+=======
+                <h1>Regístrate</h1>
+                <p class="text-medium-emphasis">Crea tu cuenta</p>
+>>>>>>> 94e3dc6544f1060b3b769bcc272f8a598fdde172
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
 
@@ -67,7 +76,11 @@
 
                     <div class="row mb-3">
                         <label for="email" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+<<<<<<< HEAD
                             {{ __('Correo Electrónico') }}:
+=======
+                            {{ __('E-Mail ') }}:
+>>>>>>> 94e3dc6544f1060b3b769bcc272f8a598fdde172
                         </label>
 
                         <input id="email" type="email"
@@ -98,7 +111,11 @@
                     </div>
 
                     <div class="row mb-3">
+<<<<<<< HEAD
                         <label for="password-confirm" class="">{{ __('Confirmar Contraseña') }}:</label>
+=======
+                        <label for="password-confirm" class="">{{ __('Confirmar  contraseña') }}:</label>
+>>>>>>> 94e3dc6544f1060b3b769bcc272f8a598fdde172
 
                         <input id="password-confirm" type="password" class="form-input w-full"
                             name="password_confirmation" required autocomplete="new-password">
@@ -116,7 +133,11 @@
 
                     <div class="flex flex-wrap">
                         <button type="submit" class="btn btn-primary" href="/landing/index">
+<<<<<<< HEAD
                             {{ __('Registrar') }}
+=======
+                            {{ __('Regístrate') }}
+>>>>>>> 94e3dc6544f1060b3b769bcc272f8a598fdde172
                         </button>
 
                         <p class="w-full text-xs text-center text-gray-700 my-6 sm:text-sm sm:my-8">
