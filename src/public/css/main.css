@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 #header .logo a {
-  color:#0c3c53
+  color:#FFFFFF
 }
 #header .logo img {
   max-height: 40px;
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  color:#0c3c53;
+  color:#FFFFFF;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #0c3c53;
+  color: #000000;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
@@ -285,14 +285,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: #FFFFFF;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #47b2e4;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #37517e;
+  color: #FFFFFF;
 }
 .navbar-mobile .dropdown ul {
   position: static;
@@ -1345,4 +1345,9 @@ h1, h2, h3, h4, h5, h6 {
     #footer .credits {
       padding-top: 4px;
     }
+  }
+
+  #alquilaa{
+    background-attachment: fixed;
+    background-image: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2017/03/color-degradado-fondos-degradados-multicolor-51200.jpg?fit=1920%2C1200&ssl=1) ;
   }

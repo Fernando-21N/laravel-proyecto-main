@@ -14,4 +14,8 @@ class LandingController extends Controller
     public function checkout(){
         return view('landing.checkout');
     }
+
+    public function checkoutsupra(){
+        return view('landing.checkoutsupra');
+    }
 }
