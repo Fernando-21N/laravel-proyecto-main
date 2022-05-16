@@ -7,11 +7,10 @@
 
   <title>Car Renting</title>
   <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
   <!-- Favicons -->
-  <link href="{{ asset('assets/landing/assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('assets/landing/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="assets/landing/assets/img/favicon.png" type="image/png" rel="shortcut icon">
 
   <!-- Vendor CSS Files -->
   <link href="{{ asset('assets/landing/assets/vendor/aos/aos.css') }}" rel="stylesheet">
@@ -33,8 +32,6 @@
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto"><a href="/">CAR RENTING</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>

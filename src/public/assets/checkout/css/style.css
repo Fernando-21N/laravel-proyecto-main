@@ -6389,9 +6389,7 @@ p {
 .checkout-steps-form-style-1 ul .vjopt_activeli .title {
   color: #000;
 }
-.checkout-steps-form-style-1 ul .vjopt_activeli .title::before {
-  content: "\F0143";
-}
+
 .checkout-steps-form-style-1 .title {
   font-size: 16px;
   font-weight: 500;
@@ -6400,19 +6398,7 @@ p {
   padding: 0 16px;
   position: relative;
 }
-.checkout-steps-form-style-1 .title::before {
-  position: absolute;
-  content: "\F0140";
-  top: 50%;
-  right: 16px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-family: material design icons;
-  font-size: 24px;
-  color: #7d7d7d;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
+
 .checkout-steps-form-style-1 .checkout-steps-form-content {
   padding: 16px;
   padding-top: 0;

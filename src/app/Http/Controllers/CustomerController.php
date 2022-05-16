@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Encryption;
 use App\Models\Customer;
 use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Crypt;
 
 class CustomerController extends Controller
 {
@@ -29,6 +34,7 @@ class CustomerController extends Controller
         return view('customer.create');
     }
 
+
     /**
      * Store a newly created resource in storage.
      *
@@ -37,23 +43,31 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'txtNombre'=>'required',
-            'txtApellidos'=> 'required',
-            'txtEmail' => 'required',
-            'txtDireccion' => 'required'
-        ]);
- 
-        $customer = new Customer([
+        $customer = new Customer();
+
+        $customer->fill([
             'nombre' => $request->get('txtNombre'),
             'apellidos'=> $request->get('txtApellidos'),
             'email'=> $request->get('txtEmail'),
-            'direccion'=> $request->get('txtDireccion')
+            'numero'=> $request->get('txtNumero'),
+            'direccion' => $request->get('txtDireccion'),
+            'ciudad'=> $request->get('txtCiudad'),
+            'codigopostal'=> $request->get('txtCodigoPostal'),
+            'pais' => $request->get('txtPais'),
+            'municipio'=> $request->get('txtMunicipio'),
+            'titular_tarjeta'=> $request->get('txtTitularT'),
+            'numero_tarjeta' => Crypt::encrypt($request->txtNumeroT),
+            'mes_expiracion_tarjeta'=> $request->get('txtMesExpiracionT'),
+            'anho_expiracion_tarjeta'=> $request->get('txtAnhoExpiracionT'),
+            'cvv'=> $request->get('txtCvvT')
         ]);
  
+        
+
         $customer->save();
-        return redirect('/customer')->with('success', 'Customer has been added');
+        return redirect('/')->with('success', 'Customer has been added');
     }
+
 
     /**
      * Display the specified resource.
@@ -90,7 +104,17 @@ class CustomerController extends Controller
             'txtNombre'=>'required',
             'txtApellidos'=> 'required',
             'txtEmail' => 'required',
-            'txtDireccion' => 'required'
+            'txtNumero' => 'required',
+            'txtDireccion'=>'required',
+            'txtCiudad'=> 'required',
+            'txtCodigoPostal' => 'required',
+            'txtPais' => 'required',
+            'txtMunicipio'=>'required',
+            'txtTitularT'=> 'required',
+            'txtNumeroT'=> 'required',
+            'txtMesExpiracionT'=> 'required',
+            'txtAnhoExpiracionT'=> 'required',
+            'txtCvvT'=> 'required'
         ]);
  
  
@@ -98,7 +122,17 @@ class CustomerController extends Controller
         $customer->nombre = $request->get('txtNombre');
         $customer->apellidos = $request->get('txtApellidos');
         $customer->email = $request->get('txtEmail');
+        $customer->numero = $request->get('txtNumero');
         $customer->direccion = $request->get('txtDireccion');
+        $customer->ciudad = $request->get('txtCiudad');
+        $customer->codigopostal = $request->get('txtCodigoPostal');
+        $customer->pais = $request->get('txtPais');
+        $customer->municipio = $request->get('txtMunicipio');
+        $customer->titular_tarjeta = $request->get('txtTitularT');
+        $customer->numero_tarjeta = Hash::make($request->get['txtNumeroT']);
+        $customer->mes_expiracion_tarjeta = $request->get('txtMesExpiracionT');
+        $customer->anho_expiracion_tarjeta = $request->get('txtAnhoExpiracionT');
+        $customer->cvv = Hash::make($request->get['txtCvvT']);
  
         $customer->update();
  
